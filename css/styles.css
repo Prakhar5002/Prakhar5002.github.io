@@ -10123,3 +10123,8 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.skill {
+  font-size: 14;
+  color: 'red';
+}
