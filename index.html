@@ -1,429 +1,385 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Prakhar Pandey · Senior Software Engineer (Mobile &amp; Full-Stack)</title>
-    <meta name="description" content="Prakhar Pandey, Senior Software Engineer (Mobile &amp; Full-Stack). 5.5 years building React Native apps used by 50,000+ people and full-stack TypeScript products with React, NestJS and PostgreSQL." />
+    <meta name="description" content="Prakhar Pandey — SDE-II, Frontend & Cross-Platform Engineer. React, React Native, and TypeScript across web and mobile." />
     <meta name="author" content="Prakhar Pandey" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#f8fafc" />
+    <meta name="theme-color" content="#f7f6fb" />
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Prakhar Pandey · Senior Software Engineer (Mobile &amp; Full-Stack)" />
-    <meta property="og:description" content="5.5 years building React Native apps used by 50,000+ people and full-stack TypeScript products." />
+    <meta property="og:title" content="Prakhar Pandey — SDE-II · Frontend & Cross-Platform Engineer" />
+    <meta property="og:description" content="SDE-II · React, React Native & TypeScript · one engineer, two platforms. 5+ years shipping production apps." />
     <meta property="og:url" content="https://prakhar5002.github.io/" />
-    <meta property="og:image" content="https://prakhar5002.github.io/assets/img/profile-640.jpg" />
-    <link rel="canonical" href="https://prakhar5002.github.io/" />
+    <title>Prakhar Pandey — SDE-II · Frontend & Cross-Platform Engineer</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <script>
-      (function () {
-        var t = 'light';
-        try {
-          var q = /[?&]theme=(light|dark)\b/.exec(window.location.search);
-          t = q ? q[1] : window.localStorage.getItem('theme') || 'light';
-        } catch (e) {
-          /* storage blocked: stay light */
-        }
-        if (t !== 'dark') t = 'light';
-        var d = document.documentElement;
-        d.setAttribute('data-theme', t);
-        d.classList.add('js');
-        // If scripts.js fails to load or throws, never leave .reveal content hidden.
-        setTimeout(function () {
-          if (!window.revealReady) d.classList.remove('js');
-        }, 2500);
-      })();
-    </script>
-    <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin />
-    <!-- Icons are decorative: load Font Awesome without blocking first paint -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" /></noscript>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/scripts.js" defer></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <noscript><style>.reveal,.reveal-row{opacity:1 !important;transform:none !important}</style></noscript>
   </head>
-  <body>
-    <a class="skip-link" href="#profile">Skip to content</a>
-    <div class="blobs" aria-hidden="true">
-      <span class="blob blob-1"></span><span class="blob blob-2"></span><span class="blob blob-3"></span><span class="blob blob-4"></span>
-    </div>
-
-    <header class="nav-wrap">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-brand" href="#profile">Prakhar</a>
-        <ul class="nav-links">
-          <li><a href="#profile" data-nav="profile">Profile</a></li>
-          <li><a href="#experience" data-nav="experience">Experience</a></li>
-          <li><a href="#skills" data-nav="skills">Skills</a></li>
-          <li><a href="#what-i-do" data-nav="what-i-do">What I Do</a></li>
-          <li><a href="#projects" data-nav="projects">Projects</a></li>
-          <li><a href="#contact" data-nav="contact">Contact</a></li>
-        </ul>
-        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark theme"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
-        <button id="menu-toggle" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
-      </nav>
-      <div id="mobile-menu" class="mobile-menu" hidden>
-        <ul>
-          <li><a href="#profile" data-nav="profile">Profile</a></li>
-          <li><a href="#experience" data-nav="experience">Experience</a></li>
-          <li><a href="#skills" data-nav="skills">Skills</a></li>
-          <li><a href="#what-i-do" data-nav="what-i-do">What I Do</a></li>
-          <li><a href="#projects" data-nav="projects">Projects</a></li>
-          <li><a href="#contact" data-nav="contact">Contact</a></li>
-        </ul>
+  <body id="page-top" data-theme="light">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#page-top">Prakhar<span class="gradient-text">Pandey</span></a>
+      <ul class="nav-links">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light/dark theme" type="button">
+          <svg class="icon-moon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+        </button>
+        <a class="btn-cta" href="assets/Prakhar_Pandey.pdf" download>Résumé ↓</a>
       </div>
-    </header>
-
-    <main id="main">
-      <section id="profile" class="hero">
-        <div class="container hero-grid">
+    </nav>
+    <main>
+      <section id="about" class="section hero">
+        <div class="hero-split">
           <div class="hero-copy reveal">
-            <h1>Hi, I'm <span class="grad">Prakhar</span></h1>
-            <p class="hero-role">Senior Software Engineer · Mobile &amp; Full-Stack</p>
-            <p class="hero-summary">5.5 years building scalable mobile, web and backend systems. I ship React Native apps used by 50,000+ people at a 0.21% crash rate, and build full-stack TypeScript products end to end with React, NestJS and PostgreSQL, plus AI features with a human review step.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-code" aria-hidden="true"></i>View My Work</a>
-              <a class="btn btn-outline" href="assets/Prakhar_Pandey.pdf" download><i class="fa-solid fa-download" aria-hidden="true"></i>Download Resume</a>
+            <p class="hero-eyebrow"><span class="dot"></span> SDE-II · open to frontend &amp; cross-platform roles</p>
+            <h1 class="hero-name">One engineer,<br>two platforms.</h1>
+            <p class="hero-role">Prakhar Pandey — React across web &amp; mobile · React Native · TypeScript</p>
+            <p class="hero-lead">5+ years shipping production frontends across web and mobile — component
+              architecture, payments, security, and real-time data — dropping into native Kotlin when it counts.</p>
+            <div class="hero-cta">
+              <a class="btn-cta" href="assets/Prakhar_Pandey.pdf" download>Download Résumé ↓</a>
+              <a class="btn-ghost" href="https://github.com/Prakhar5002" target="_blank" rel="noopener">GitHub ↗</a>
+              <a class="btn-ghost" href="https://www.linkedin.com/in/prakhar-pandeey-97532915a/" target="_blank" rel="noopener">LinkedIn ↗</a>
             </div>
-            <div class="hero-social">
-              <a class="social" href="https://github.com/Prakhar5002" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-              <a class="social" href="https://www.linkedin.com/in/prakhar-pandey-97532915a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <div class="stat-tiles">
+              <div class="stat"><span class="stat-n count" data-count="5" data-suffix="+" data-display="5+">5+</span><span class="stat-l">Years</span></div>
+              <div class="stat"><span class="stat-n count" data-count="11" data-display="11">11</span><span class="stat-l">Apps shipped</span></div>
+              <div class="stat"><span class="stat-n count" data-count="50" data-suffix="K+" data-display="50K+">50K+</span><span class="stat-l">Users</span></div>
+              <div class="stat"><span class="stat-n count" data-count="85" data-prefix="~" data-suffix="%" data-display="~85%">~85%</span><span class="stat-l">Firebase cost cut</span></div>
             </div>
           </div>
-          <div class="hero-photo reveal">
-            <picture>
-              <source srcset="assets/img/profile-640.webp" type="image/webp">
-              <img src="assets/img/profile-640.jpg" alt="Prakhar Pandey" width="280" height="280" fetchpriority="high" />
-            </picture>
-            <span class="photo-badge" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Experience</h2>
-            <p>5.5 years building React Native and full-stack TypeScript products, from startups to 50,000+ user platforms.</p>
-          </div>
-          <div class="timeline">
-            <article class="card xp-card reveal">
-              <div class="xp-head"><h3>SDE-II, Frontend &amp; Mobile</h3><span class="tag tag-current">Current</span></div>
-              <p class="xp-company">Smartworks</p>
-              <p class="xp-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i>May 2024 – Present</span><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Gurugram, India</span></p>
-              <ul class="checks">
-                <li>Core engineer on Workctrl, a React Native workplace app used by 50,000+ people in 5 countries, running at a 0.21% crash rate and 0.06% ANR rate.</li>
-                <li>Led the React Native 0.76 → 0.79 / Expo 53 upgrade for Google Play's 16 KB page-size requirement, with a phased runbook and staged OTA rollout.</li>
-                <li>Cut Firebase reads 80–90% by having clients read only a rolling booking window, while keeping phones and room tablets in sync in real time.</li>
-                <li>Built SW Tickets from an empty repo to the App Store and Google Play, with server-driven UI so workflows change without an app release.</li>
-              </ul>
-              <ul class="chips" aria-label="Technologies"><li>React Native</li><li>TypeScript</li><li>Expo</li><li>Kotlin</li><li>Firebase</li><li>Keycloak</li></ul>
-            </article>
-            <article class="card xp-card reveal">
-              <div class="xp-head"><h3>Founder &amp; Engineer</h3><span class="tag">Personal product</span></div>
-              <p class="xp-company">AUMVerse</p>
-              <p class="xp-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i>2026 – Present</span><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Remote</span></p>
-              <ul class="checks">
-                <li>Built and run an Expo app, React + Tailwind web apps and a NestJS + Prisma + PostgreSQL API in one TypeScript monorepo, deployed with Docker.</li>
-                <li>Booking engine with database-level locking to prevent double bookings.</li>
-                <li>Gemini-powered content formatting with a human approval step.</li>
-                <li>About 1,700 automated tests in CI.</li>
-              </ul>
-              <ul class="chips" aria-label="Technologies"><li>Expo</li><li>React</li><li>NestJS</li><li>Prisma</li><li>PostgreSQL</li><li>Docker</li><li>Gemini</li></ul>
-            </article>
-            <article class="card xp-card reveal">
-              <div class="xp-head"><h3>React Native Developer</h3></div>
-              <p class="xp-company">Infinity Soft Systems</p>
-              <p class="xp-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i>Dec 2022 – Mar 2024</span><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Noida, India</span></p>
-              <ul class="checks">
-                <li>Built QU App, shared-room Spotify voting with live vote sync over Firebase.</li>
-                <li>Shipped NoWorriesApp, a wellbeing tracker, to the App Store and Google Play, with response caching and request de-duplication.</li>
-              </ul>
-              <ul class="chips" aria-label="Technologies"><li>React Native</li><li>Firebase</li><li>Spotify API</li><li>REST</li></ul>
-            </article>
-            <article class="card xp-card reveal">
-              <div class="xp-head"><h3>Frontend Developer (React &amp; React Native)</h3></div>
-              <p class="xp-company">iFlair Web Technologies</p>
-              <p class="xp-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i>Feb 2022 – Nov 2022</span><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Ahmedabad, India</span></p>
-              <ul class="checks">
-                <li>Built Clinicards, a patient-recovery app for a Netherlands client, in React and React Native on AWS AppSync GraphQL.</li>
-                <li>Symptom tracking and recovery-trend charts.</li>
-              </ul>
-              <ul class="chips" aria-label="Technologies"><li>React</li><li>React Native</li><li>GraphQL</li><li>AWS AppSync</li></ul>
-            </article>
-            <article class="card xp-card reveal">
-              <div class="xp-head"><h3>Junior Software Engineer</h3></div>
-              <p class="xp-company">Shantikunj</p>
-              <p class="xp-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i>May 2021 – Jan 2022</span><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Haridwar, India</span></p>
-              <ul class="checks">
-                <li>Built a video-on-demand and live-streaming app on the YouTube API.</li>
-              </ul>
-              <ul class="chips" aria-label="Technologies"><li>React Native</li><li>YouTube API</li></ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Technical Skills</h2>
-            <p>The tools I use to build across mobile, web and backend, grouped by category.</p>
-          </div>
-          <div class="grid-3 skills-grid">
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-blue"><i class="fa-solid fa-code" aria-hidden="true"></i></span><h3>Languages</h3></div>
-              <ul class="chips"><li>TypeScript</li><li>JavaScript</li><li>Kotlin</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-pink"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></span><h3>Mobile</h3></div>
-              <ul class="chips"><li>React Native (Android &amp; iOS)</li><li>Expo</li><li>Native Modules (Kotlin)</li><li>Reanimated</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-indigo"><i class="fa-solid fa-display" aria-hidden="true"></i></span><h3>Frontend (Web)</h3></div>
-              <ul class="chips"><li>React.js</li><li>Tailwind CSS</li><li>Redux Toolkit</li><li>React Router</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-green"><i class="fa-solid fa-server" aria-hidden="true"></i></span><h3>Backend</h3></div>
-              <ul class="chips"><li>Node.js</li><li>NestJS</li><li>REST APIs</li><li>GraphQL</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-violet"><i class="fa-solid fa-database" aria-hidden="true"></i></span><h3>Databases</h3></div>
-              <ul class="chips"><li>PostgreSQL</li><li>Prisma</li><li>Firebase Realtime DB</li><li>MMKV</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-orange"><i class="fa-solid fa-cloud" aria-hidden="true"></i></span><h3>Cloud &amp; DevOps</h3></div>
-              <ul class="chips"><li>Docker</li><li>GitHub Actions</li><li>Expo EAS</li><li>Fastlane</li><li>AWS S3</li><li>AppSync</li><li>Cognito</li><li>CloudWatch</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-cyan"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><h3>State &amp; Data</h3></div>
-              <ul class="chips"><li>Redux Toolkit</li><li>Zustand</li><li>TanStack Query</li><li>Context API</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-amber"><i class="fa-solid fa-vial" aria-hidden="true"></i></span><h3>Testing &amp; Quality</h3></div>
-              <ul class="chips"><li>Jest</li><li>Vitest</li><li>Sentry</li><li>Android vitals</li><li>Code Reviews</li></ul>
-            </article>
-            <article class="card skill-card reveal">
-              <div class="card-title"><span class="tile tint-purple"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span><h3>AI-assisted Dev</h3></div>
-              <ul class="chips"><li>Claude Code</li><li>Cursor</li><li>GitHub Copilot</li><li>ChatGPT</li><li>Gemini API</li></ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="what-i-do" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>What I Do</h2>
-            <p>Where I add the most value on a team, from the first commit to production.</p>
-          </div>
-          <div class="grid-3">
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-blue"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></span>
-              <h3>Mobile Apps</h3>
-              <p>Cross-platform React Native and Expo apps for Android and iOS, from first screen to store release.</p>
-              <ul class="checks"><li>Cross-platform</li><li>Native modules</li><li>App Store &amp; Play releases</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-indigo"><i class="fa-solid fa-display" aria-hidden="true"></i></span>
-              <h3>Web Apps</h3>
-              <p>Fast, responsive React apps and admin dashboards, styled with Tailwind.</p>
-              <ul class="checks"><li>Responsive UI</li><li>Dashboards</li><li>Accessible design</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-green"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
-              <h3>Backend &amp; APIs</h3>
-              <p>Typed REST APIs and data models with NestJS, Prisma and PostgreSQL.</p>
-              <ul class="checks"><li>REST APIs</li><li>Database design</li><li>Docker deploys</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-teal"><i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i></span>
-              <h3>Real-Time Systems</h3>
-              <p>Live data that stays in sync across phones, tablets and the web.</p>
-              <ul class="checks"><li>Firebase RTDB</li><li>MQTT</li><li>Rolling-window sync</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-rose"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
-              <h3>Payments &amp; Auth</h3>
-              <p>Payment and login flows that are safe and charge exactly once.</p>
-              <ul class="checks"><li>Exactly-once UPI</li><li>Keycloak SSO / PKCE</li><li>Secure token storage</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-purple"><i class="fa-solid fa-brain" aria-hidden="true"></i></span>
-              <h3>AI Features</h3>
-              <p>AI built into real products, with a human review step where it matters.</p>
-              <ul class="checks"><li>Gemini integration</li><li>Human-in-the-loop</li><li>AI-assisted dev</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-orange"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></span>
-              <h3>Performance &amp; Stability</h3>
-              <p>Apps that start fast, scroll smoothly and rarely crash.</p>
-              <ul class="checks"><li>0.21% crash rate</li><li>80–90% fewer reads</li><li>List optimization</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-pink"><i class="fa-solid fa-rocket" aria-hidden="true"></i></span>
-              <h3>Upgrades &amp; Releases</h3>
-              <p>React Native and Expo upgrades, CI/CD and over-the-air updates.</p>
-              <ul class="checks"><li>RN / Expo upgrades</li><li>CI/CD</li><li>OTA updates</li></ul>
-            </article>
-            <article class="card do-card reveal">
-              <span class="tile tile-lg tint-cyan"><i class="fa-solid fa-code-pull-request" aria-hidden="true"></i></span>
-              <h3>Code Quality</h3>
-              <p>Clean, reviewed, tested code that a team can keep moving fast on.</p>
-              <ul class="checks"><li>Code reviews</li><li>TypeScript conventions</li><li>Automated tests</li></ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Featured Projects</h2>
-            <p>Products I've built and shipped, from workplace apps used by 50,000+ people to my own wellness platform.</p>
-          </div>
-          <div class="grid-3">
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#f97316;--c2:#facc15"><span class="cover-icon"><i class="fa-solid fa-om" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">AUMVerse</span></div>
-              <div class="project-body">
-                <h3>AUMVerse</h3>
-                <p>A wellness platform for yoga, meditation and scripture: an Expo app, React web apps and a NestJS API, built and run solo.</p>
-                <ul class="tags"><li class="tint-slate">Expo</li><li class="tint-sky">React</li><li class="tint-rose">NestJS</li><li class="tint-indigo">PostgreSQL</li></ul>
-                <div class="project-foot">
-                  <div class="links"><a class="link-btn" href="https://aumverse.co" target="_blank" rel="noopener" aria-label="AUMVerse website"><i class="fa-solid fa-globe" aria-hidden="true"></i></a></div>
-                  <span class="year">2026</span>
+          <div class="hero-stage reveal">
+            <div class="seg" role="tablist" aria-label="Platform view">
+              <button class="seg-btn is-on" data-view="both" role="tab" aria-selected="true" type="button">Both</button>
+              <button class="seg-btn" data-view="web" role="tab" aria-selected="false" type="button">Web</button>
+              <button class="seg-btn" data-view="mobile" role="tab" aria-selected="false" type="button">Mobile</button>
+            </div>
+            <div class="stage-frames" data-view="both" aria-hidden="true">
+              <div class="mock-browser">
+                <div class="mb-bar"><i></i><i></i><i></i><span class="mb-url">clinicards.app</span></div>
+                <div class="mb-body">
+                  <div class="mrow" data-sync="book"><span class="k"></span><span class="l"></span></div>
+                  <div class="mrow" data-sync="order"><span class="k"></span><span class="l"></span></div>
+                  <div class="mrow" data-sync="visitor"><span class="k"></span><span class="l"></span></div>
                 </div>
               </div>
-            </article>
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#1d4ed8;--c2:#38bdf8"><span class="cover-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">Workctrl</span></div>
-              <div class="project-body">
-                <h3>Workctrl</h3>
-                <p>A workplace app for room booking, visitors, food ordering and tickets, used by 50,000+ people in 5 countries.</p>
-                <ul class="tags"><li class="tint-cyan">React Native</li><li class="tint-blue">TypeScript</li><li class="tint-amber">Firebase</li><li class="tint-teal">Razorpay</li></ul>
-                <div class="project-foot">
-                  <div class="links">
-                    <a class="link-btn" href="https://apps.apple.com/us/app/workctrl/id6739703138" target="_blank" rel="noopener" aria-label="Workctrl on the App Store"><i class="fa-brands fa-apple" aria-hidden="true"></i></a>
-                    <a class="link-btn" href="https://play.google.com/store/apps/details?id=com.sts.swmobile" target="_blank" rel="noopener" aria-label="Workctrl on Google Play"><i class="fa-brands fa-google-play" aria-hidden="true"></i></a>
+              <svg id="hero-wire" viewBox="0 0 120 20" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M2 10 H118" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 5"/>
+              </svg>
+              <div class="mock-phone">
+                <div class="mp-screen">
+                  <div class="mp-top">Clinicards</div>
+                  <div class="prow" data-sync="book"><span class="k"></span><span class="l"></span></div>
+                  <div class="prow" data-sync="order"><span class="k"></span><span class="l"></span></div>
+                  <div class="prow" data-sync="visitor"><span class="k"></span><span class="l"></span></div>
+                </div>
+              </div>
+            </div>
+            <p class="stage-cap">Same components, two platforms — hover a row.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <h2 class="section-label">Featured Work</h2>
+        <div class="work">
+
+          <!-- 01 · Workctrl -->
+          <article class="work-row reveal-row" data-side="right">
+            <div class="work-text">
+              <div class="work-meta"><span class="ptag">Mobile</span><span class="work-idx">01 · Workctrl</span></div>
+              <h3>Workctrl <span class="pcard-sub">— workplace operations platform</span></h3>
+              <div class="work-metric"><span class="count" data-count="50" data-suffix="K+" data-display="50K+">50K+</span><em>users · 0.21% crash rate</em></div>
+              <p class="work-lead">Enterprise app (room booking, visitor management, food ordering). I own payments &amp; security.</p>
+              <ul class="work-points">
+                <li><strong>Payment-grade reliability:</strong> idempotency keys, exactly-once UPI across app-switch round-trips, hold-release watchdog.</li>
+                <li>VAPT hardening — SSL public-key pinning, device-integrity gate, hand-authored native jail-monkey patch.</li>
+                <li>OneSignal deep-routing (~20 types); Firebase RTDB live order tracking; Expo 53 / 16 KB migration.</li>
+              </ul>
+              <p class="pcard-stack">React Native · TypeScript · Redux Toolkit · TanStack Query (MMKV) · Razorpay · Keycloak</p>
+              <div class="pcard-links">
+                <a href="https://apps.apple.com/us/app/workctrl/id6739703138" target="_blank" rel="noopener">App Store ↗</a>
+                <a href="https://play.google.com/store/apps/details?id=com.sts.swmobile" target="_blank" rel="noopener">Google Play ↗</a>
+              </div>
+            </div>
+            <div class="work-visual" data-tilt>
+              <div class="device"><div class="dscreen viz-pay">
+                <div class="dhead">Book · Meeting Room 4</div>
+                <div class="slotgrid" aria-hidden="true"><span></span><span></span><span class="sel"></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="paid" aria-hidden="true"><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg> UPI · Paid</div>
+              </div></div>
+            </div>
+          </article>
+
+          <!-- 02 · Meeting Room Tablet -->
+          <article class="work-row reveal-row" data-side="left">
+            <div class="work-text">
+              <div class="work-meta"><span class="ptag">Mobile</span><span class="work-idx">02 · Meeting Room Tablet</span><span class="pcard-badge">◆ Headline</span></div>
+              <h3>Meeting Room Tablet <span class="pcard-sub">— real-time room kiosk</span></h3>
+              <div class="work-metric"><span class="count" data-count="90" data-suffix="%" data-display="80–90%">80–90%</span><em>fewer Firebase reads (measured)</em></div>
+              <p class="work-lead">A wall-mounted booking kiosk with on-device face-recognition check-in, live across meeting rooms.</p>
+              <ul class="work-points">
+                <li><strong>On-device face recognition</strong> in native Kotlin + OpenCV (blink/texture/motion liveness) — no cloud round-trip.</li>
+                <li>Owned the transport migration <strong>Kafka → Firebase RTDB</strong>; bounded rolling-window query.</li>
+                <li>Fleet ops: heartbeat monitoring, UAT/PROD switch, quick-book / check-in / extend / end.</li>
+              </ul>
+              <p class="pcard-stack">React Native · Expo · Kotlin · OpenCV · Firebase RTDB · TanStack Query · OAuth2</p>
+            </div>
+            <div class="work-visual" data-tilt>
+              <div class="device tablet"><div class="dscreen viz-room">
+                <div class="room-head"><div><b>Meeting Room 4</b><span class="free">● Available now</span></div><span class="clock">10:24</span></div>
+                <div class="room-slots">
+                  <div class="slot busy">09:00 · Standup</div>
+                  <div class="slot busy">10:00 · 1:1 Sync</div>
+                  <div class="slot now">10:30 · Book →</div>
+                  <div class="slot">11:30 · Free</div>
+                </div>
+                <button class="room-book" type="button" tabindex="-1">Face check-in</button>
+              </div></div>
+            </div>
+          </article>
+
+          <!-- 03 · SW Tickets -->
+          <article class="work-row reveal-row" data-side="right">
+            <div class="work-text">
+              <div class="work-meta"><span class="ptag">Mobile</span><span class="work-idx">03 · SW Tickets</span></div>
+              <h3>SW Tickets <span class="pcard-sub">— internal support ticketing</span></h3>
+              <div class="work-metric"><span class="worded">Zero-release</span><em>workflow changes — server-driven</em></div>
+              <p class="work-lead">Lead author. A backend-driven workflow engine: the server defines valid transitions and fields; the client renders whatever it permits.</p>
+              <ul class="work-points">
+                <li>Role-gated UX from one codebase — manager (KPIs/all tickets) vs user (raise + mine).</li>
+                <li>Multi-step Raise-Ticket form with cascading fields + S3 presigned attachment upload.</li>
+                <li>Keycloak PKCE with single-flight refresh; Sentry + Clarity observability.</li>
+              </ul>
+              <p class="pcard-stack">React Native · TypeScript · Keycloak PKCE · S3 · Sentry · Microsoft Clarity · OneSignal</p>
+              <div class="pcard-links">
+                <a href="https://apps.apple.com/us/app/sw-tickets/id6504776362" target="_blank" rel="noopener">App Store ↗</a>
+                <a href="https://play.google.com/store/apps/details?id=com.swticket" target="_blank" rel="noopener">Google Play ↗</a>
+              </div>
+            </div>
+            <div class="work-visual" data-tilt>
+              <div class="device"><div class="dscreen viz-tickets">
+                <div class="dhead">Tickets · SLA</div>
+                <ul class="dtix" aria-hidden="true">
+                  <li><span class="pill open">Open</span><b></b></li>
+                  <li><span class="pill prog">In&nbsp;progress</span><b></b></li>
+                  <li><span class="pill done">Resolved</span><b></b></li>
+                  <li><span class="pill open">Open</span><b></b></li>
+                </ul>
+              </div></div>
+            </div>
+          </article>
+
+          <!-- 04 · Smart Setup -->
+          <article class="work-row reveal-row" data-side="left">
+            <div class="work-text">
+              <div class="work-meta"><span class="ptag">Mobile</span><span class="work-idx">04 · Smart Setup</span></div>
+              <h3>Smart Setup <span class="pcard-sub">— IoT device onboarding</span></h3>
+              <div class="work-metric"><span class="count" data-count="40" data-prefix="~" data-suffix="%" data-display="~40%">~40%</span><em>fewer provisioning failures</em></div>
+              <p class="work-lead">Greenfield provisioning wizard for Sonoff/Tasmota Wi-Fi switches across 60+ smart-building campuses.</p>
+              <ul class="work-points">
+                <li>Concurrent <strong>mDNS + /24 subnet discovery</strong> (abort-on-found, DHCP-first).</li>
+                <li>Two-backend model (BMS ObjectIds vs Core GUIDs) with a translation layer.</li>
+                <li>NetInfo-aware flow suspends on Wi-Fi instability before bad state is written.</li>
+              </ul>
+              <p class="pcard-stack">React Native · Expo Router · Zustand · TanStack Query · MQTT/Tasmota · Keycloak</p>
+            </div>
+            <div class="work-visual" data-tilt>
+              <div class="device"><div class="dscreen viz-radar">
+                <div class="dhead">Discovering devices…</div>
+                <div class="radar" aria-hidden="true"><span class="sweep"></span><span class="blip b1"></span><span class="blip b2"></span><span class="blip b3"></span></div>
+                <ul class="dfound"><li>Sonoff · 10.0.4.21</li><li>Tasmota · 10.0.4.34</li><li>Sonoff · 10.0.4.55</li></ul>
+              </div></div>
+            </div>
+          </article>
+
+          <!-- 05 · NoWorriesApp -->
+          <article class="work-row reveal-row" data-side="right">
+            <div class="work-text">
+              <div class="work-meta"><span class="ptag">iOS + Android</span><span class="work-idx">05 · NoWorriesApp</span></div>
+              <h3>NoWorriesApp <span class="pcard-sub">— mental-wellbeing tracker</span></h3>
+              <div class="work-metric"><span class="count" data-count="30" data-prefix="~" data-suffix="%" data-display="~30%">~30%</span><em>fewer redundant network calls</em></div>
+              <p class="work-lead">A guided worry-logging and mood-tracking app — recognise, manage, and ease a worry, then track how you feel over time.</p>
+              <ul class="work-points">
+                <li>Happiness Tracker across five life areas with a tracked happiness index over time.</li>
+                <li>Guided "My Journey" worry flow; response caching + request deduplication.</li>
+                <li>Shipped to both the App Store and Google Play, architecture through release.</li>
+              </ul>
+              <p class="pcard-stack">React Native · REST APIs</p>
+              <div class="pcard-links">
+                <a href="https://apps.apple.com/in/app/noworriesapp/id6450531547" target="_blank" rel="noopener">App Store ↗</a>
+                <a href="https://play.google.com/store/apps/details?id=com.noworries" target="_blank" rel="noopener">Google Play ↗</a>
+              </div>
+            </div>
+            <div class="work-visual" data-tilt>
+              <div class="device"><div class="dscreen viz-happy">
+                <div class="happy-head"><span class="smiley" aria-hidden="true">🙂</span> Happiness Tracker</div>
+                <div class="hslider"><span>My home life</span><div class="htrack"><i style="left:62%"></i></div></div>
+                <div class="hslider"><span>My social life</span><div class="htrack"><i style="left:46%"></i></div></div>
+                <div class="hslider"><span>My love life</span><div class="htrack"><i style="left:78%"></i></div></div>
+                <div class="hslider"><span>My health life</span><div class="htrack"><i style="left:54%"></i></div></div>
+              </div></div>
+            </div>
+          </article>
+
+          <!-- 06 · Clinicards (web + mobile capstone) -->
+          <article class="work-row work-split reveal-row" data-side="left">
+            <div class="work-text">
+              <div class="work-meta"><span class="ptag">Web + Mobile</span><span class="work-idx">06 · Clinicards</span></div>
+              <h3>Clinicards <span class="pcard-sub">— EU patient-recovery platform</span></h3>
+              <div class="work-metric"><span class="count" data-count="18" data-display="18">18</span><em>hospital &amp; clinic builds from one codebase</em></div>
+              <p class="work-lead">A home-monitoring app for post-op recovery: patients log health metrics along a carepath and watch their trends. Built across React web and React Native — my clearest proof of "two platforms."</p>
+              <ul class="work-points">
+                <li><strong>53 metric-card types</strong> (pain, mood, blood pressure, range-of-motion, recovery&nbsp;%) with Victory Native trend charts.</li>
+                <li>White-label for <strong>18 org builds</strong> via 42 feature flags + per-tenant theming, all from one codebase.</li>
+                <li>AWS AppSync / GraphQL (Apollo) backend; Cognito auth with MFA + biometric/PIN; GDPR flows.</li>
+              </ul>
+              <p class="pcard-stack">React (web) · React Native · Expo · Apollo / AppSync GraphQL · AWS Cognito · Victory Native</p>
+              <div class="pcard-links"><a href="https://play.google.com/store/apps/details?id=nl.synappz.clinicards.iherstel" target="_blank" rel="noopener">Google Play ↗</a></div>
+            </div>
+            <div class="work-visual work-visual-split" data-tilt>
+              <div class="split-viz">
+                <div class="mock-browser">
+                  <div class="mb-bar"><i></i><i></i><i></i><span class="mb-url">clinicards.app/insights</span></div>
+                  <div class="mb-body viz-insights" aria-hidden="true">
+                    <div class="ins-card">
+                      <div class="ins-head"><span class="ins-t">Recovery progress</span><span class="ins-v">72%</span></div>
+                      <svg class="ins-chart" viewBox="0 0 120 34" preserveAspectRatio="none"><polygon class="ar" points="0,34 0,28 24,24 48,21 72,15 96,9 120,4 120,34"/><polyline class="ln" points="0,28 24,24 48,21 72,15 96,9 120,4"/></svg>
+                    </div>
+                    <div class="ins-card">
+                      <div class="ins-head"><span class="ins-t">Heart rate</span><span class="ins-v">72 bpm</span></div>
+                      <svg class="ins-chart" viewBox="0 0 120 34" preserveAspectRatio="none"><polygon class="ar" points="0,34 0,20 20,12 40,22 60,10 80,20 100,13 120,17 120,34"/><polyline class="ln" points="0,20 20,12 40,22 60,10 80,20 100,13 120,17"/></svg>
+                    </div>
                   </div>
-                  <span class="year">2024 – now</span>
                 </div>
-              </div>
-            </article>
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#0f766e;--c2:#2dd4bf"><span class="cover-icon"><i class="fa-solid fa-tablet-screen-button" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">Meeting Room Tab</span></div>
-              <div class="project-body">
-                <h3>Meeting Room Tab</h3>
-                <p>A tablet kiosk outside each meeting room: live status, walk-up booking, and check-in by OTP, PIN or face.</p>
-                <ul class="tags"><li class="tint-cyan">React Native</li><li class="tint-violet">Kotlin</li><li class="tint-green">OpenCV</li><li class="tint-amber">Firebase</li></ul>
-                <div class="project-foot">
-                  <div class="links"></div>
-                  <span class="year">2024 – now</span>
-                </div>
-              </div>
-            </article>
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#4338ca;--c2:#818cf8"><span class="cover-icon"><i class="fa-solid fa-ticket" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">SW Tickets</span></div>
-              <div class="project-body">
-                <h3>SW Tickets</h3>
-                <p>A support-ticketing app with server-driven UI: the backend defines each status and form, so workflows change without a release.</p>
-                <ul class="tags"><li class="tint-cyan">React Native</li><li class="tint-blue">TypeScript</li><li class="tint-orange">TanStack Query</li><li class="tint-pink">Keycloak</li></ul>
-                <div class="project-foot">
-                  <div class="links">
-                    <a class="link-btn" href="https://apps.apple.com/us/app/sw-tickets/id6504776362" target="_blank" rel="noopener" aria-label="SW Tickets on the App Store"><i class="fa-brands fa-apple" aria-hidden="true"></i></a>
-                    <a class="link-btn" href="https://play.google.com/store/apps/details?id=com.swticket" target="_blank" rel="noopener" aria-label="SW Tickets on Google Play"><i class="fa-brands fa-google-play" aria-hidden="true"></i></a>
+                <div class="mock-phone">
+                  <div class="mp-screen viz-insights-m" aria-hidden="true">
+                    <div class="ins-card">
+                      <div class="ins-head"><span class="ins-t">Pain (VAS)</span><span class="ins-v">3</span></div>
+                      <svg class="ins-chart" viewBox="0 0 120 34" preserveAspectRatio="none"><polygon class="ar" points="0,34 0,8 24,10 48,15 72,20 96,25 120,28 120,34"/><polyline class="ln" points="0,8 24,10 48,15 72,20 96,25 120,28"/></svg>
+                    </div>
+                    <div class="ins-card">
+                      <div class="ins-head"><span class="ins-t">Range of motion</span><span class="ins-v">▲</span></div>
+                      <svg class="ins-chart" viewBox="0 0 120 34" preserveAspectRatio="none"><polygon class="ar" points="0,34 0,26 30,20 60,15 90,9 120,5 120,34"/><polyline class="ln" points="0,26 30,20 60,15 90,9 120,5"/></svg>
+                    </div>
                   </div>
-                  <span class="year">2024 – now</span>
                 </div>
               </div>
-            </article>
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#15803d;--c2:#4ade80"><span class="cover-icon"><i class="fa-solid fa-wifi" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">Smart Setup</span></div>
-              <div class="project-body">
-                <h3>Smart Setup</h3>
-                <p>Onboarding for smart-building Wi-Fi switches: finds devices on the local network and provisions them.</p>
-                <ul class="tags"><li class="tint-cyan">React Native</li><li class="tint-slate">Expo Router</li><li class="tint-orange">Zustand</li><li class="tint-green">MQTT</li></ul>
-                <div class="project-foot">
-                  <div class="links"></div>
-                  <span class="year">2025</span>
-                </div>
-              </div>
-            </article>
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#0284c7;--c2:#7dd3fc"><span class="cover-icon"><i class="fa-solid fa-face-smile" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">NoWorriesApp</span></div>
-              <div class="project-body">
-                <h3>NoWorriesApp</h3>
-                <p>A guided worry log and happiness tracker across five life areas, shipped to both stores.</p>
-                <ul class="tags"><li class="tint-cyan">React Native</li><li class="tint-slate">REST APIs</li></ul>
-                <div class="project-foot">
-                  <div class="links">
-                    <a class="link-btn" href="https://apps.apple.com/in/app/noworriesapp/id6450531547" target="_blank" rel="noopener" aria-label="NoWorriesApp on the App Store"><i class="fa-brands fa-apple" aria-hidden="true"></i></a>
-                    <a class="link-btn" href="https://play.google.com/store/apps/details?id=com.noworries" target="_blank" rel="noopener" aria-label="NoWorriesApp on Google Play"><i class="fa-brands fa-google-play" aria-hidden="true"></i></a>
-                  </div>
-                  <span class="year">2023</span>
-                </div>
-              </div>
-            </article>
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#be123c;--c2:#fb7185"><span class="cover-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">Clinicards</span></div>
-              <div class="project-body">
-                <h3>Clinicards</h3>
-                <p>A post-op recovery app for EU hospitals: patients log health metrics and track recovery, white-labelled for 18 organisations.</p>
-                <ul class="tags"><li class="tint-sky">React</li><li class="tint-cyan">React Native</li><li class="tint-pink">GraphQL</li><li class="tint-orange">AWS</li></ul>
-                <div class="project-foot">
-                  <div class="links"><a class="link-btn" href="https://play.google.com/store/apps/details?id=nl.synappz.clinicards.iherstel" target="_blank" rel="noopener" aria-label="Clinicards on Google Play"><i class="fa-brands fa-google-play" aria-hidden="true"></i></a></div>
-                  <span class="year">2022</span>
-                </div>
-              </div>
-            </article>
-            <article class="card project-card reveal">
-              <div class="cover" style="--c1:#7e22ce;--c2:#c084fc"><span class="cover-icon"><i class="fa-solid fa-music" aria-hidden="true"></i></span><span class="cover-name" aria-hidden="true">QU App</span></div>
-              <div class="project-body">
-                <h3>QU App</h3>
-                <p>Shared rooms where everyone votes on the next Spotify track, with votes synced live over Firebase.</p>
-                <ul class="tags"><li class="tint-cyan">React Native</li><li class="tint-amber">Firebase</li><li class="tint-green">Spotify API</li></ul>
-                <div class="project-foot">
-                  <div class="links"></div>
-                  <span class="year">2023</span>
-                </div>
-              </div>
-            </article>
+            </div>
+          </article>
+
+        </div>
+
+        <h3 class="work-more-label">More work</h3>
+        <div class="projects-grid more-grid">
+          <article class="pcard pcard-compact reveal-row">
+            <div class="pcard-toprow"><span class="ptag">Mobile</span><span class="phero-metric"><b>Real-time</b> vote sync</span></div>
+            <h3>QU App <span class="pcard-sub">— collaborative Spotify voting</span></h3>
+            <p class="pcard-stack">React Native · Firebase RTDB · Spotify Web API · OAuth2</p>
+            <p class="pcard-points-p">Shared rooms where everyone votes on the next track. Real-time vote sync via Firebase RTDB, Spotify OAuth2 with rate-limit handling and exponential backoff, optimistic UI.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <h2 class="section-label">Experience</h2>
+        <div class="xp-timeline">
+          <div class="xp-item reveal-row">
+            <div class="xp-head"><h3>Smartworks · Gurgaon</h3><span class="xp-date">May 2024 – Present</span></div>
+            <p class="xp-role">SDE-II — Software Engineer, Frontend &amp; Mobile</p>
+            <p class="xp-body">Own the frontend across three products — Smart Setup (IoT provisioning), Workctrl (workplace ops), and SW Tickets — making architectural calls, leading releases, and driving security/performance work (VAPT hardening, Expo 53 / 16 KB migrations). Details in Featured Work above.</p>
+          </div>
+          <div class="xp-item reveal-row">
+            <div class="xp-head"><h3>Infinity Soft Systems · Noida</h3><span class="xp-date">Dec 2022 – Mar 2024</span></div>
+            <p class="xp-role">React Native Developer</p>
+            <p class="xp-body">Shipped two consumer apps from architecture through store release: QU App (real-time collaborative Spotify voting on Firebase RTDB) and NoWorriesApp (mental-wellbeing tracking with response caching). Owned client communication alongside development.</p>
+          </div>
+          <div class="xp-item reveal-row">
+            <div class="xp-head"><h3>iFlair Web Technologies · Ahmedabad</h3><span class="xp-date">Feb 2022 – Nov 2022</span></div>
+            <p class="xp-role">Frontend Developer (React &amp; React Native)</p>
+            <p class="xp-body">Built symptom-tracking flows, recovery charts, and the patient dashboard for Clinicards — a live EU patient-health platform (React Native + React web) — using AWS Amplify/AppSync/GraphQL and Victory Native. First deliberate WCAG-oriented work; collaborated with Netherlands-based stakeholders across time zones.</p>
+          </div>
+          <div class="xp-item reveal-row">
+            <div class="xp-head"><h3>Shantikunj · Haridwar</h3><span class="xp-date">May 2021 – Jan 2022</span></div>
+            <p class="xp-role">Junior Software Engineer</p>
+            <p class="xp-body">First engineering role. Built a mobile platform for video-on-demand and live-event streaming (YouTube API), and got genuinely comfortable with React Native and shipping to real users.</p>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Let's Work Together</h2>
-            <p>Open to full-time Senior React Native and Full-Stack roles, remote or with relocation. Let's talk.</p>
+      <section id="skills" class="section reveal">
+        <h2 class="section-label">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal-row"><h3>Languages</h3><div class="chips">
+            <span class="chip key">TypeScript</span><span class="chip">JavaScript (ES6+)</span><span class="chip key">Kotlin</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Mobile &amp; Native</h3><div class="chips">
+            <span class="chip key">React Native</span><span class="chip key">Expo</span><span class="chip">Expo Router</span><span class="chip">Android</span><span class="chip">iOS</span><span class="chip">Kotlin / OpenCV native modules</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Frontend (Web)</h3><div class="chips">
+            <span class="chip key">React.js</span><span class="chip">Redux Toolkit</span><span class="chip">TanStack React Query</span><span class="chip">React Router</span><span class="chip">Responsive UI</span><span class="chip">WCAG accessibility</span><span class="chip">Webpack</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>State &amp; Data</h3><div class="chips">
+            <span class="chip">Redux Toolkit</span><span class="chip">TanStack React Query</span><span class="chip">Zustand</span><span class="chip">MMKV</span><span class="chip">Context API</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Auth &amp; Security</h3><div class="chips">
+            <span class="chip">OAuth2 / OIDC</span><span class="chip">Keycloak (PKCE)</span><span class="chip">SSL public-key pinning</span><span class="chip">Device integrity</span><span class="chip">SecureStore</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Payments</h3><div class="chips">
+            <span class="chip">Razorpay</span><span class="chip">Idempotency / exactly-once flows</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>APIs &amp; Data</h3><div class="chips">
+            <span class="chip">REST</span><span class="chip">GraphQL / Apollo Client</span><span class="chip">Axios</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Real-Time &amp; IoT</h3><div class="chips">
+            <span class="chip">Firebase Realtime DB</span><span class="chip">OneSignal</span><span class="chip">MQTT</span><span class="chip">Kafka (migration)</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Build &amp; Release</h3><div class="chips">
+            <span class="chip">Expo EAS</span><span class="chip">Fastlane</span><span class="chip">16 KB / New-Arch migration</span><span class="chip">Play Store &amp; App Store</span><span class="chip">Git</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Quality &amp; Performance</h3><div class="chips">
+            <span class="chip">TypeScript strict</span><span class="chip">Jest</span><span class="chip">Manual QA</span><span class="chip">FlashList / virtualization</span><span class="chip">Sentry</span><span class="chip">Microsoft Clarity</span>
+          </div></div>
+          <div class="skill-group reveal-row"><h3>Tools</h3><div class="chips">
+            <span class="chip">Figma</span><span class="chip">Jira</span><span class="chip">VS Code</span><span class="chip">Linux</span>
+          </div></div>
+        </div>
+      </section>
+
+      <section id="education" class="section reveal">
+        <h2 class="section-label">Education</h2>
+        <div class="edu-grid">
+          <div class="edu-card reveal-row">
+            <div class="chips edu-chips"><span class="chip key">MCA</span><span class="chip">2019 – 2021</span><span class="chip">70%</span></div>
+            <h3>Master of Computer Applications</h3>
+            <p class="edu-org">Dev Sanskriti Vishwavidyalaya · Haridwar</p>
           </div>
-          <div class="contact-grid">
-            <div class="reveal">
-              <h3>Get In Touch</h3>
-              <ul class="contact-list">
-                <li class="contact-row"><span class="tile tint-blue"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><a href="mailto:pandey.prakhar5002@gmail.com">pandey.prakhar5002@gmail.com</a></li>
-                <li class="contact-row"><span class="tile tint-violet"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><span>Gurugram, India</span></li>
-              </ul>
-              <h3 class="follow-title">Follow Me</h3>
-              <div class="follow">
-                <a href="https://github.com/Prakhar5002" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
-                <a href="https://www.linkedin.com/in/prakhar-pandey-97532915a" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
-              </div>
-            </div>
-            <div class="connect-card reveal">
-              <h3>Let's Connect</h3>
-              <div class="connect-item"><span class="tile tint-blue"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><div><h4>Open to Roles</h4><p>Senior React Native, Mobile or Full-Stack engineering roles.</p></div></div>
-              <div class="connect-item"><span class="tile tint-green"><i class="fa-solid fa-earth-asia" aria-hidden="true"></i></span><div><h4>Remote-Friendly</h4><p>Comfortable working with US and EU time-zone overlap.</p></div></div>
-              <div class="connect-item"><span class="tile tint-purple"><i class="fa-solid fa-clock" aria-hidden="true"></i></span><div><h4>Quick Replies</h4><p>I usually reply within a day.</p></div></div>
-            </div>
+          <div class="edu-card reveal-row">
+            <div class="chips edu-chips"><span class="chip key">BCA</span><span class="chip">2016 – 2019</span><span class="chip">80%</span></div>
+            <h3>Bachelor of Computer Applications</h3>
+            <p class="edu-org">Dev Sanskriti Vishwavidyalaya · Haridwar</p>
           </div>
         </div>
       </section>
+
+      <footer id="contact" class="section footer reveal">
+        <h2 class="footer-title gradient-text">One engineer, two platforms. Let's build.</h2>
+        <p class="footer-sub">Open to frontend and cross-platform roles where scale, ownership, and craft matter.</p>
+        <div class="footer-links">
+          <a href="mailto:pandey.prakhar5002@gmail.com">pandey.prakhar5002@gmail.com</a>
+          <a href="https://www.linkedin.com/in/prakhar-pandeey-97532915a/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/Prakhar5002" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="assets/Prakhar_Pandey.pdf" download>Résumé ↓</a>
+        </div>
+        <p class="footer-copy">Gurgaon, India · Built with vanilla HTML/CSS/JS.</p>
+      </footer>
     </main>
-
-    <footer class="footer">
-      <p>© <span data-year>2026</span> Prakhar Pandey. All rights reserved.</p>
-    </footer>
+    <script src="js/scripts.js" defer></script>
   </body>
 </html>
